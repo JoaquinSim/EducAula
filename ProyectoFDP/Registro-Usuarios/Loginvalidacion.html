@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Formulario de registro</title>
+    <link rel="stylesheet" href="css/estilos.css" type="text/css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    </head>
+  <body>
+  <div class="login-box">
+    <h1>Formulario de registro</h1>
+    <h2>Nombre:</h2>
+    <input type="text" id="usuario" maxlength="15" placeholder="&#128100;Ingrese su nombre aqui"></p>
+    <h2>Apellido:</h2>
+    <input type="text" id="apellido" maxlength="15" placeholder="&#128100;Ingrese su apellido aqui"></p>
+    <h2>Correo: </h2>
+    <input type="email" id="correo"  placeholder="&#128231; Ingrese su correo aqui">
+    <h2>Clave:</h2>
+    <input type="password" id="clave" min="10" placeholder="&#128275; ********">
+    <h2>¿Que rol cumple?</h2>
+    <input type="text" id="rolUsuario" placeholder="&#128100;Maestro--Estudiante">
+
+    <button class="btn btn-warning" onclick="crearUsuarioTemporal(usuario.value,apellido.value,correo.value, clave.value,rolUsuario.value)">Crear</button>
+    <button class="btn btn-danger" onclick="limpiarFormulario()">limpiar Formulario</button>
+
+    <a href="../index.html">Volver al inicio</a>
+    <br>
+
+  </div>
+  </body>
+<script src="loginvalidacion.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</html>

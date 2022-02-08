@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Recuperacion clave</title>
+    <link rel="stylesheet" href="css/estilos.css" type="text/css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="login-box">
+      <h1>Recuperacion de contraseña</h1>
+      <h2>Ingrese su usuario:</h2> <input type="text" id="usuario" placeholder="&#128100; Ingrese su usuario ">
+      <h2>Ingrese su correo:</h2> <input type="email" id="correo" placeholder="&#128275; ejemplo@abc.com" min="4" max="8" >
+      <h2>Su contraseña:</h2> <input type="text" id="clave" placeholder="&#128275; *********" min="4" max="8" disabled >
+      <br></br>
+      <button  class="btn btn-warning" onclick="recuperacionClave(usuario.value,correo.value,clave.value)">Enviar</button>
+      <br> </br>
+      <a href="../Loginn/login.html">Volver al login</a>
+      <span><a href="../Registro-Usuarios/loginvalidacion.html">Crear una cuenta</a></span>
+     <div id="mensaje"></div>
+    </div>
+  </body>
+  <script src="recuperacion-clave.js"></script>
+</html>
