@@ -1,0 +1,50 @@
+h1{
+    text-align: center;
+    color:red
+    
+    
+}
+.imagen{
+    display: block;
+    margin-left:auto ;
+    margin-right:auto ;  
+    width: 1010px;
+    border-radius: 5px;
+    padding: 10px;
+    border: 2px;
+
+}
+p{
+    font-size: 50px;
+    color:rgb(3, 7, 26);
+
+}
+p{
+    font-size: 20px;
+    line-height:50px ;
+
+}
+
+img{
+    width: 300px;
+    float: left;
+    margin-right: 20px;
+    margin-top: 15px;
+}
+p{
+    font-size: 30x;
+
+}
+
+
+     
+
+
+
+
+    
+
+    
+
+
+

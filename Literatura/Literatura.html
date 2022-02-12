@@ -1,0 +1,81 @@
+<<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Literatura</title>
+    <link rel="shortcut icon" href="Imagenes/icono.png" type="image/x-icon">
+    <link rel="shortcut icon" href="" type="image/x-icon">
+    <link rel="stylesheet" href="Literatura.css">
+    <link rel="stylesheet" href="https://bootswatch.com/4/litera/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <title></title>
+  </head>
+  <body>
+      <header class="Literatura">
+        <nav>
+              <div id="usuarioLogueado"></div>
+              <button class="btn btn-light"><a href="Actividades.pdf">Descargar Material de Apoyo </a></button>
+              <button class="btn btn-light"><a href="../index.html"> Pantalla Principal </a></button>
+              <button class="btn btn-light" onclick="cerrarSesion()">Cerrar Sesion</button>
+        </nav>
+      </header>
+
+   <!-- Acerca de la Pagina-->
+   <br>
+      <main>
+          <section class="contenedor sobre-nosotros">
+              <h2 class="titulo">LENGUA Y LITERATURA</h2>
+              <div class="contenedor-sobre-nosotros">
+                  <img src="../Literatura/Portada/Niños.jpeg" alt="" class="imagen-about-us">
+                  <div class="contenido-textos">
+                      <br><br>
+                      <h3>
+                        En esta primera parte aprenderemos el abecedario y a diferenciar las vocales y consonantes
+                     </h3>
+              </div>
+              </div>
+          </section>
+
+     <!-- VIDEOS-->
+             <section>
+              <h2 class="titulo">EL ABECEDARIO</h2>
+              <div class="video-responsive">
+              <iframe src="https://www.youtube.com/embed/OohvX2NiOjM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+              <h2 class="titulo">APRENDIENDO LAS VOCALES</h2>
+              <div class="video-responsive">
+                <iframe src="https://www.youtube.com/embed/CqTXFbnG0ag" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+              <h2 class="titulo">APRENDIENDO LAS CONSONANTES</h2>
+              <div class="video-responsive">
+                <iframe src="https://www.youtube.com/embed/b_aUnwukZp8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+             </section>
+             <center><br>
+              <input type="file" id="archivoSubidoIngles">
+              <button onclick="subirMaterial(archivoSubidoIngles.value)">Enviar</button>
+              <!--<div id="archivoSubido"></div></center><br>-->
+    <!--Pie de Pagina-->
+    <footer>
+      <div class="contenedor-footer">
+          <div class="content-foo">
+              <h4>Teléfono</h4>
+              <p>0912345678</p>
+          </div>
+          <div class="content-foo">
+              <h4>Email</h4>
+              <p>eduaula.ec@hotmail.com</p>
+          </div>
+          <div class="content-foo">
+              <h4>Ubicación</h4>
+              <p>Quito-Ecuador</p>
+          </div>
+      </div>
+      <h2 class="titulo-final">&copy;EduAula 2021</h2>
+  </footer>
+  </body>
+  <script src="literatura.js"></script>
+</html>

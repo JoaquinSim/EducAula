@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Proyecto integrador</title>
+    <link rel="stylesheet" href="css/estilo.css" type="text/css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  </head> 
+  <body>
+    <div class="login-box">
+      <h1>Ingresar</h1>
+      <h2>Usuario:</h2> <input type="text" id="usuario" placeholder="&#128100; Ingrese su usuario ">
+      <h2>Password:</h2> <input type="password" id="clave" placeholder="&#128275; Ingrese su contraseña" min="4" max="8" >
+      <br></br>
+      <button  class="btn btn-warning" onclick="validarUsuario(usuario.value,clave.value)">Entrar</button>
+      <br> </br>
+      <a href="../Registro-Usuarios/recuperacion-clave.html">Olvidaste tu clave?</a>
+      <span><a href="../Registro-Usuarios/loginvalidacion.html">Crear una cuenta</a></span>
+     <div id="mensaje"></div>
+    </div>
+  </body>
+  <script src="login.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</html>
