@@ -3,7 +3,7 @@ let seleccion;
 let variablePanel;
 
 function cerrarSesion() {
-  window.location= '../ProyectoFDP-entregable/Loginn/login.html';
+  window.location= 'Loginn/login.html';
   usuarioLogueado = [];
   localStorage.setItem('usuarioLogueado', JSON.stringify(usuarioLogueado));
   console.log('Sesion cerrada', usuarioLogueado);
@@ -54,7 +54,7 @@ let usuarioLogueado = JSON.parse(localStorage.getItem('usuarioLogueado'));
 //console.log(usuarioLogueado);
 if(usuarioLogueado == '' || usuarioLogueado == null )  {
   alert('No tiene una sesion activa Redireccionando...');
-  window.location = '../ProyectoFDP-entregable/Loginn/login.html';
+  window.location = 'Loginn/login.html';
 
 }else {
   swal('Ya tiene una sesion activa');

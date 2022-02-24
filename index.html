@@ -13,101 +13,106 @@
 </head>
 <body>
   <header>
-    <nav>
-      <div  class="rol" id="usuarioLogueado"></div>
-      <button class="btn btn-light" onclick="cerrarSesion()">Cerrar Sesion</button>
-      <a href="file:///C:/Users/Joaquin/Desktop/Proyecto%20Integrador/ProyectoIntegrador/ProyectoFDP-entregable/calificaciones.html"><button class="btn btn-light">Calificaciones</button></a>
-      <section class="textos-header">
-      <h1>El Sitio Web dedicado a la educación que necesitabas</h1>
-      <h2>Mejora tus notas aquí</h2>
-      </section>
-    </nav>
+    <div class="header">
+      <div class="header--imagen">
+        <img src="Imagenes/portadaEducAula.jpg" alt="">
+      </div>
+      <div class="header--textos">
+        <h1>El Sitio Web dedicado a la educación que necesitabas</h1>
+        <h2>Mejora tus notas aquí</h2>
+      </div>
+      <div class="header--text">
+        <div class="header--text__h2">
+          <h2>Acerca de</h2>
+        </div>
+        <div class="header--text__h2">
+          <h2>Cursos</h2>
+        </div>
+        <div class="header--text__h2">
+          <h2>Empezar</h2>
+        </div>
+        <div class="header--text__h2">
+          <h2>Contactanos</h2>
+        </div>
+      </div>
+      <div class="header--sesion">
+        <div class="header--sesion__registrate">
+          <h2>Registrate</h2>
+        </div>
+        <div class="header--sesion__iniciar">
+          <h2>Iniciar Sesion</h2>
+        </div>
+      </div>
+      <div class="menu--toggle">
+          <svg width="30" height="30" viewBox="0 0 24 24">
+            <path fill="#B7BFC6" fill-rule="evenodd" stroke="none" stroke-width="1" id="Icon/small/hamburger" d="M5 13a1 1 0 010-2h14a1 1 0 010 2H5zm0 4a1 1 0 010-2h14a1 1 0 010 2H5zm0-8a1 1 0 110-2h14a1 1 0 010 2H5z"></path>
+          </svg>
+      </div>
+    </div>
   </header>
-  <br>
+
   <main>
-    <section class="contenedor sobre-nosotros">
-      <h2 class="titulo">EducAula</h2>
-      <div class="contenedor-sobre-nosotros">
-      <img src="Imagenes/logoEducAula.jpg" alt="" class="imagen-about-us">
-      <div class="contenido-textos">
-      <br><br><h3><span>1</span>¿Para quien esta dirigido?</h3>
-      <p>Esta dirigido tanto a niños como a jóvenes para que puedan reforzar los conocimientos aprendidos en el aula de clases.</p>
-      <h3><span>2</span>¿Comó Funciona?</h3>
-      <p>Su Funcionamiento es bastante sencillo,solamente vasta con hacer un clic en la Materia deseada para empezar a estudiar.</p>
-      <h3><span>3</span>Practica tus materias</h3>
-      <p>Aquí encontraras materias básicas (Primaria y Secundaria) hasta de nivel superior (Universidad), implementado con ejercicios y teoria, explicandote cada tema según tu nivel de aprendizaje.</p>
+    <div class="main">
+      <section class="contenedor sobre-nosotros">
+        <div class="contenedor-sobre-nosotros">
+        <img src="Imagenes/logoEducAula.jpg" alt="" class="imagen-about-us">
+        <div class="contenido-textos">
+        <br><br>
+        <h3><span>1</span>¿Para quien esta dirigido?</h3>
+        <p>Esta dirigido tanto a niños como a jóvenes para que puedan reforzar los conocimientos aprendidos en el aula de clases.</p>
+        <h3><span>2</span>¿Comó Funciona?</h3>
+        <p>Su Funcionamiento es bastante sencillo,solamente vasta con hacer un clic en la Materia deseada para empezar a estudiar.</p>
+        <h3><span>3</span>Practica tus materias</h3>
+        <p>Aquí encontraras materias básicas (Primaria y Secundaria) hasta de nivel superior (Universidad), implementado con ejercicios y teoria, explicandote cada tema según tu nivel de aprendizaje.</p>
+        </div>
+        </div>
+      </section>
+
+
+    <!--Materias-->
+    <section class="MATERIAS">
+      <div class="contenedor">
+      <h2 class="titulo">Materias</h2>
+      <div class="galeria-port">
+      <div class="imagen-port">
+      <img src="Imagenes/English.jpg" alt="">
+      <div class="hover-galeria">
+      <a href="ingles.html"><img src="Imagenes/English.jpg" alt=""></a>
+      <p>English</p>
+      </div>
+      </div>
+      <div class="imagen-port">
+      <img src="Imagenes/Literatura.jpg" alt="">
+      <div class="hover-galeria">
+      <a href="Literatura/Literatura.html"><img src="Imagenes/Literatura.jpg" alt=""></a>
+      <p>Literatura</p>
+      </div>
+      </div>
+      <div class="imagen-port">
+      <img src="Imagenes/Matematicas.jpg" alt="">
+      <div class="hover-galeria">
+      <a href="matematica/index.html"><img src="Imagenes/Matematicas.jpg" alt=""></a>
+      <p>Matemáticas</p>
+      </div>
+      </div>
+      <div class="imagen-port">
+      <img src="Imagenes/Fisica.jpg" alt="">
+      <div class="hover-galeria">
+      <a href="estudios%20sociales/index.html"><img src="Imagenes/Fisica.jpg" alt=""></a>
+      <p>Ciencias Sociales</p>
+      </div>
+      </div>
+      <div class="imagen-port">
+      <img src="Imagenes/Biologia.jpg" alt="">
+      <div class="hover-galeria">
+      <a href="CienciasNaturales/indexCiencias.html"><img src="Imagenes/Biologia.jpg" alt=""></a>
+      <p>Ciencias Naturales</p>
+      </div>
       </div>
       </div>
     </section>
-  </main>
-    <!--CRUD-->
-    <section class="CRUD">
-      <div class="container">
-      <div class="Crud-box">
-        <h1>
-          Registro Nuevos estudiantes
-        </h1>
-        <h2>Nombre:</h2>
-        <input class="form-control" type="text" id="usuario" maxlength="15" placeholder="&#128100; Ingrese su nombre aqui"></p>
-        <h2>Apellido:</h2>
-        <input class="form-control" type="text" id="apellido" maxlength="15" placeholder="&#128100; Ingrese su apellido aqui"></p>
-        <h2>Cedula: </h2>
-        <input class="form-control" type="text" id="cedula"  placeholder="&#128231; Ingrese su cedula aqui">
-        <h2>Materia:</h2>
-        <input class="form-control" type="text" id="materia" min="10" placeholder="&#128275; Ingrese la materia del estudiante"><br>
-
-        <button class="btn btn-primary" onclick="crearUsuario(usuario.value, materia.value,cedula.value,apellido.value)">Crear</button>
-        <button class="btn btn-primary" onclick="limpiarFormulario()">limpiar Formulario</button><br><br>
-
-        <select class="form-select" aria-label="Default select example" id="panel"  onclick="panelClick(apellido.value)"> </select><br><br>
-
-        <button type="button" class="btn btn-warning" onclick="actualizar()">Actualizar</button>
-        <button class="btn btn-danger" onclick="eliminar()">Eliminar</button>
-      </div>
     </div>
-  </section>
-  <!--Materias-->
-  <section class="MATERIAS">
-    <div class="contenedor">
-    <h2 class="titulo">Materias</h2>
-    <div class="galeria-port">
-    <div class="imagen-port">
-    <img src="Imagenes/English.jpg" alt="">
-    <div class="hover-galeria">
-    <a href="file:///C:/Users/Joaquin/Desktop/Proyecto%20Integrador/ProyectoIntegrador/ProyectoFDP-entregable/ingles.html"><img src="Imagenes/English.jpg" alt=""></a>
-    <p>English</p>
-    </div>
-    </div>
-    <div class="imagen-port">
-    <img src="Imagenes/Literatura.jpg" alt="">
-    <div class="hover-galeria">
-    <a href="file:///C:/Users/Joaquin/Desktop/Proyecto%20Integrador/ProyectoIntegrador/ProyectoFDP-entregable/Literatura/Literatura.html"><img src="Imagenes/Literatura.jpg" alt=""></a>
-    <p>Literatura</p>
-    </div>
-    </div>
-    <div class="imagen-port">
-    <img src="Imagenes/Matematicas.jpg" alt="">
-    <div class="hover-galeria">
-    <a href="file:///C:/Users/Joaquin/Desktop/Proyecto%20Integrador/ProyectoIntegrador/ProyectoFDP-entregable/matematica/index.html"><img src="Imagenes/Matematicas.jpg" alt=""></a>
-    <p>Matemáticas</p>
-    </div>
-    </div>
-    <div class="imagen-port">
-    <img src="Imagenes/Fisica.jpg" alt="">
-    <div class="hover-galeria">
-    <a href="file:///C:/Users/Joaquin/Desktop/Proyecto%20Integrador/ProyectoIntegrador/ProyectoFDP-entregable/estudios%20sociales/index.html"><img src="Imagenes/Fisica.jpg" alt=""></a>
-    <p>Ciencias Sociales</p>
-    </div>
-    </div>
-    <div class="imagen-port">
-    <img src="Imagenes/Biologia.jpg" alt="">
-    <div class="hover-galeria">
-    <a href="file:///C:/Users/Joaquin/Desktop/Proyecto%20Integrador/ProyectoIntegrador/ProyectoFDP-entregable/CienciasNaturales/indexCiencias.html"><img src="Imagenes/Biologia.jpg" alt=""></a>
-    <p>Ciencias Naturales</p>
-    </div>
-    </div>
-    </div>
-  </section>
+    </main>
 <!--Pie de Pagina-->
     <footer>
         <div class="contenedor-footer">
@@ -128,6 +133,7 @@
     </footer>
 </body>
 <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src="http://localhost:35729/livereload.js" charset="utf-8"></script>
 <script src="index.js"></script>
 <script src="index_html.js"></script>
 </html>
