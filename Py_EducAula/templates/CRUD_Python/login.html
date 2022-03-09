@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Login</title>
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  </head> 
+  <body>
+<div class="h-screen bg-gradient-to-br from-blue-600 to-indigo-600 flex justify-center items-center w-full">
+  <form>
+    <div class="bg-white px-10 py-8 rounded-xl w-screen shadow-md max-w-sm">
+      <div class="space-y-4">
+        <h1 class="text-center text-2xl font-semibold text-gray-600">Login</h1>
+        <div>
+          <label for="correo" class="block mb-1 text-gray-600 font-semibold">Email</label>
+          <input id="correo" type="email" class="bg-indigo-50 px-4 py-2 outline-none rounded-md w-full" required/>
+        </div>
+        <div>
+          <label for="clave" class="block mb-1 text-gray-600 font-semibold">Password</label>
+          <input id="clave" type="password" class="bg-indigo-50 px-4 py-2 outline-none rounded-md w-full" required />
+        </div>
+      </div>
+      <button type="submit"
+              class="w-full mt-6 mb-3 bg-indigo-200 rounded-lg px-4 py-2 text-lg text-gray-800 tracking-wide font-semibold font-sans"><a href="{{url_for('index_crud')}}">Ingresar</a></button>
+    <button type="submit"
+              class="w-full mt-6 mb-3 bg-indigo-200 rounded-lg px-4 py-2 text-lg text-gray-800 tracking-wide font-semibold font-sans"><a href="{{url_for('registro')}}">Registrate</a></button>
+      <a href="{{url_for('index')}}">Volver al inicio</a>
+    </div>
+  </form>
+</div>
+  </body>
+<script src="static/script/login.js"></script>
+</html>

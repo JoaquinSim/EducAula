@@ -1,0 +1,144 @@
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<div class="form-group">
+                <a href="{{url_for('index')}}" class="btn btn-primary">Pantalla principal</a>
+            </div>
+<section class="text-blue-700 text-center text-6xl font-sans md:font-serif">
+  <b><h5> LENGUAJE Y COMUNICACION </h5></b>
+</section>
+
+<!--HEADER-->
+<main class="py-12 md:px-20 sm:px-14 px-6">
+    <div class="sm:flex items-center shadow-2xl bg-orange-300">
+      <div class="md:px-10 sm:px-5">
+        <b><h1 class="text-blue-700 text-2xl my-2 font-sans md:font-serif">BIENVENIDOS</h1></b>
+        <p class="text-gray-700 mb-2 md:mb-6">EducAula te da la bienvenida a la materia de Lenguaje y Comunicacion, espero te diviertas y aprendas mucho, 
+        <i><b>"Procura en tus estudios no saber más que los otros, sino saberlo mejor."</i></b></p>
+
+        <div class="flex justify-between mb-2">
+           <span class="text-gray-700 mb-2 md:mb-6 text-sm"> <i><b> Séneca, Lucio Anneo </i></b></span>
+        </div>
+      </div>
+      <div>
+        <img class="bg-cover" src="https://image.shutterstock.com/image-photo/education-learning-concept-opening-book-600w-794015686.jpg" alt="" />
+      </div>
+    </div>
+
+   <!--HEADER-->
+
+   <!--FIGURAS HISTORICAS-->
+    <br>
+    <section class="text-blue-700 text-center text-4xl font-sans md:font-serif">
+      <b><h5> PRINCIPALES RAMAS</h5></b>
+    </section>
+   </br>
+
+    <div class="mt-6 md:flex space-x-6">
+      <div>
+        <img width="250" height="200" class="ml-24 pt-7 pb-7" src="https://images.pexels.com/photos/267669/pexels-photo-267669.jpeg?cs=srgb&dl=pexels-pixabay-267669.jpg&fm=jpg" alt="">
+        <div>
+          <h1  class="mt-3 text-blue-700 text-2xl font-bold my-2 text-center"> Ortografia</h1>
+          <p class="text-gray-700 mb-2 text-justify "> La ortografía ​ es el conjunto de reglas y convenciones que rigen el sistema de escritura
+             habitual establecido para una lengua estándar. La ortografía frecuentemente ha protagonizado debates; 
+             la reforma de la ortografía alemana de 1996 llevó a un amplio debate, y finalmente no fue aplicada ni en Austria ni en Suiza</p>
+        </div>
+      </div>
+
+
+      <div >
+        <img width="250" height="200" class="ml-22 pt-7 pb-7" src="https://images.pexels.com/photos/6894165/pexels-photo-6894165.jpeg?cs=srgb&dl=pexels-cottonbro-6894165.jpg&fm=jpg" alt="" >
+        <div>
+          <h1  class="mt-3 text-blue-700 text-2xl font-bold my-2 text-center"> Gramatica </h1>
+          <p class="text-gray-700 mb-2 text-justify">La gramática es el estudio de las reglas y principios que gobiernan el uso de las lenguas y la organización de las palabras 
+            dentro de unas oraciones y otro tipo de constituyentes sintácticos</p>
+        </div>
+      </div>
+      <div>
+        <img  width="250" height="200" class="ml-22 pt-7 pb-7" src="https://images.pexels.com/photos/7267349/pexels-photo-7267349.jpeg?cs=srgb&dl=pexels-sarah-chai-7267349.jpg&fm=jpg" alt="">
+        <div>
+          <h1  class="mt-3 text-blue-700 text-2xl font-bold my-2 text-center"> Comunicación </h1>
+          <p class="text-gray-700 mb-2 text-justify">La comunicación es la acción consciente de intercambiar información entre dos o más participantes con el fin de transmitir 
+            o recibir información u opiniones distintas</p>
+        </div>
+      </div>
+    </div>
+    <div></div>
+  </main>
+
+  <!--FIGURAS HISTORICAS-->
+
+  <!--SECCION VIDEOS-->
+  <br>
+    <section class="text-blue-700 text-center text-4xl font-sans md:font-serif">
+      <b><h5> VIDEOS </h5></b>
+    </section>
+  </br>
+
+<div class="holder mx-auto w-10/12 grid sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-4">
+
+  <div class="each mb-10 m-2 shadow-lg border-gray-800 bg-gray-100 relative">
+    <img width="400" height="400" src="https://cdn.pixabay.com/photo/2020/04/20/18/10/cinema-5069314_960_720.jpg" alt="" />
+    <div class="badge absolute top-0 right-0 bg-indigo-500 m-1 text-gray-200 p-1 px-2 text-xs font-bold rounded">09:52</div>
+    <div class="info-box text-xs flex p-1 font-semibold text-gray-500 bg-gray-300">
+      <span class="mr-1 p-1 px-2 font-bold">457.634 views</span>
+      <span class="mr-1 p-1 px-2 font-bold border-l border-gray-400">7950 Likes</span>
+    </div>
+    <div class="desc p-4 text-gray-800">
+      <a href="https://www.youtube.com/watch?v=i4EMg9uOCY0&ab_channel=StavGuxt" target="_new" class="title font-bold block cursor-pointer hover:underline"> Funciones del lenguaje </a>
+      <a href="https://www.youtube.com/channel/UCBxLniUP9Fd-D7nQHDN7K_w" target="_new" class="badge bg-indigo-500 text-blue-100 rounded px-1 text-xs font-bold cursor-pointer">StavGuxt</a>
+      <span class="description text-sm block py-2 border-gray-400 mb-2">Funciones del lenguaje Curso de lectura comprensiva y redacción!</span>
+    </div>
+  </div>
+
+   <!-- each -->
+   <div class="each mb-10 m-2 shadow-lg border-gray-800 bg-gray-100 relative">
+    <img width="400" height="400" src="https://cdn.pixabay.com/photo/2020/04/20/18/10/cinema-5069314_960_720.jpg" alt="" />
+    <div class="badge absolute top-0 right-0 bg-indigo-500 m-1 text-gray-200 p-1 px-2 text-xs font-bold rounded">14:28</div>
+    <div class="info-box text-xs flex p-1 font-semibold text-gray-500 bg-gray-300">
+      <span class="mr-1 p-1 px-2 font-bold">225.209 views</span>
+      <span class="mr-1 p-1 px-2 font-bold border-l border-gray-400">3020 Likes</span>
+    </div>
+    <div class="desc p-4 text-gray-800">
+      <a href="https://www.youtube.com/watch?v=geVqKCJHowA&ab_channel=logue1980" target="_new" class="title font-bold block cursor-pointer hover:underline">QUÉ ES EL LENGUAJE: FUNCIONES Y ELEMENTOS DE LA COMUNICACIÓN </a>
+      <a href="https://www.youtube.com/channel/UC1rj6u4_CT62svwGGPl5pfQ" target="_new" class="badge bg-indigo-500 text-blue-100 rounded px-1 text-xs font-bold cursor-pointer">logue1980</a>
+      <span class="description text-sm block py-2 border-gray-400 mb-2">Lecciones de Lengua y Literatura. Realizado por Rafael Jorge Herrera Espinosa !</span>
+    </div>
+  </div>
+  <!-- each -->
+  <div class="each mb-10 m-2 shadow-lg border-gray-800 bg-gray-100 relative">
+    <img width="600" height="600" src="https://cdn.pixabay.com/photo/2020/04/20/18/10/cinema-5069314_960_720.jpg" alt="" />
+    <div class="badge absolute top-0 right-0 bg-indigo-500 m-1 text-gray-200 p-1 px-2 text-xs font-bold rounded">03:00</div>
+    <div class="info-box text-xs flex p-1 font-semibold text-gray-500 bg-gray-300">
+      <span class="mr-1 p-1 px-2 font-bold">68.721 views</span>
+      <span class="mr-1 p-1 px-2 font-bold border-l border-gray-400">1017 Likes</span>
+    </div>
+
+    <div class="desc p-4 text-gray-800">
+      <a href="https://www.youtube.com/watch?v=LBr-Bf7Ob-8&ab_channel=ElT%C3%ADoFil%C3%B3logo" target="_new" class="title font-bold block cursor-pointer hover:underline">COMUNICACIÓN Y LENGUAJE</a>
+      <a href="https://www.youtube.com/channel/UC4w0w6beCGH1RkwfVllkYmQ" target="_new" class="badge bg-indigo-500 text-blue-100 rounded px-1 text-xs font-bold cursor-pointer">El Tío Filólogo</a>
+      <span class="description text-sm block py-2 border-gray-400 mb-2"> Hoy, el Tío Filólogo te trae este bonísimo tema. ¡Disfrútalo! !</span>
+    </div>
+
+  </div>
+  <!-- each -->
+  <div class="each mb-10 m-2 shadow-lg border-gray-800 bg-gray-100 relative">
+    <img width="600" height="600" src="https://cdn.pixabay.com/photo/2020/04/20/18/10/cinema-5069314_960_720.jpg" alt="" />
+    <div class="badge absolute top-0 right-0 bg-indigo-500 m-1 text-gray-200 p-1 px-2 text-xs font-bold rounded">2:24</div>
+    <div class="info-box text-xs flex p-1 font-semibold text-gray-500 bg-gray-300">
+      <span class="mr-1 p-1 px-2 font-bold">54.770 views</span>
+      <span class="mr-1 p-1 px-2 font-bold border-l border-gray-400"> 560 Likes</span>
+    </div>
+    <div class="desc p-4 text-gray-800">
+      <a href="https://www.youtube.com/watch?v=geWwOjFbkH0&ab_channel=PrepaenL%C3%ADnea" target="_new" class="title font-bold block cursor-pointer hover:underline">La Utilidad del Lenguaje</a>
+      <a href="https://www.youtube.com/c/PrepaenL%C3%ADneaM%C3%A9xico" target="_new" class="badge bg-indigo-500 text-blue-100 rounded px-1 text-xs font-bold cursor-pointer">Prepa en Línea</a>
+      <span class="description text-sm block py-2 border-gray-400 mb-2"> Sin Descripcion !</span>
+    </div>
+  </div>
+</div>
+  <!-- each -->
+  <!--SECCION VIDEOS-->
+
+{% include 'footer.html' %}

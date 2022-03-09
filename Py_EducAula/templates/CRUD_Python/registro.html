@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8"><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    </head>
+  <body>
+
+<div class="h-screen bg-gradient-to-br from-blue-600 to-indigo-600 flex justify-center items-center w-full">
+	<div class="lg:w-2/5 md:w-1/2 w-2/3">
+		<form method="post" action="/store" enctype="multipart/form-data" class="bg-white p-10 rounded-lg shadow-lg min-w-full">
+			<h1 class="text-center text-2xl mb-6 text-gray-600 font-bold font-sans" >Formulario Registro</h1>
+			<div>
+				<label for="txtNombre" class="text-gray-800 font-semibold block my-3 text-md" >Nombre</label>
+				<input id="txtNombre" class="w-full bg-gray-100 px-4 py-2 rounded-lg focus:outline-none" type="text"
+					   name="txtNombre"  placeholder="username" required/>
+      </div>
+            <div>
+				<label for="txtApellido"class="text-gray-800 font-semibold block my-3 text-md" >Apellido
+				</label>
+				<input id="txtApellido" class="w-full bg-gray-100 px-4 py-2 rounded-lg focus:outline-none" type="text"
+					   name="txtApellido"  placeholder="username" required/>
+      </div>
+				<div>
+					<label for="txtCorreo" class="text-gray-800 font-semibold block my-3 text-md"
+					>Correo</label>
+					<input id="txtCorreo" class="w-full bg-gray-100 px-4 py-2 rounded-lg focus:outline-none"
+						   type="email" name="txtCorreo"  placeholder="@email" required/>
+      </div>
+					<div><label for="txtClave" class="text-gray-800 font-semibold block my-3 text-md"
+						>Password
+					</label>
+						<input id="txtClave" class="w-full bg-gray-100 px-4 py-2 rounded-lg focus:outline-none"
+							   type="password"
+                               name="txtClave"  placeholder="password" required/>
+      </div>
+
+            <button type="submit"
+					class="w-full mt-6 bg-indigo-600 rounded-lg px-4 py-2 text-lg text-white tracking-wide font-semibold font-sans"
+			>Registrar</button>
+            <div
+					class="w-full mt-6 mb-3 bg-indigo-100 rounded-lg px-4 py-2 text-lg text-gray-800 tracking-wide font-semibold font-sans"><center><a href="{{url_for('login')}}">Login</a></center>
+			</div>
+			<a href="{{url_for('index')}}">Volver al inicio</a>
+		</form>
+	</div>
+</div>
+  </body>
+</html>

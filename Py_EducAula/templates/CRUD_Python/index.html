@@ -1,0 +1,79 @@
+{% include 'header.html' %}
+
+<head>
+    <meta charset="UTF-8">
+    <title>EducAula</title>
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="static/css/style.css">
+    <link href="{{url_for('static', filename = 'style.css')}}" rel="stylesheet">
+</head>
+<body>
+
+  <main>
+    <div class="form-group">
+                <a href="{{url_for('index_crud')}}" class="btn btn-primary">CRUD</a>
+            </div>
+    <div class="main">
+      <section class="contenedor sobre-nosotros">
+        <div class="contenedor-sobre-nosotros">
+        <img src="static/Imagenes/logoEducAula.jpg" alt="" class="imagen-about-us">
+        <div class="contenido-textos">
+        <br><br>
+        <h3><span>1</span>¿Para quien esta dirigido?</h3>
+        <p>Esta dirigido tanto a niños como a jóvenes para que puedan reforzar los conocimientos aprendidos en el aula de clases.</p>
+        <h3><span>2</span>¿Comó Funciona?</h3>
+        <p>Su Funcionamiento es bastante sencillo,solamente vasta con hacer un clic en la Materia deseada para empezar a estudiar.</p>
+        <h3><span>3</span>Practica tus materias</h3>
+        <p>Aquí encontraras materias básicas (Primaria y Secundaria) hasta de nivel superior (Universidad), implementado con ejercicios y teoria, explicandote cada tema según tu nivel de aprendizaje.</p>
+        </div>
+        </div>
+      </section>
+
+</div>
+    <!--Materias-->
+    <section class="MATERIAS">
+      <div class="contenedor">
+      <h2 class="titulo">Materias</h2>
+      <div class="galeria-port">
+      <div class="imagen-port">
+      <img src="static/Imagenes/English.jpg" alt="">
+      <div class="hover-galeria">
+      <a href="{{url_for('ingles')}}"><img src="static/Imagenes/English.jpg" alt=""></a>
+      <p>English</p>
+      </div>
+      </div>
+      <div class="imagen-port">
+      <img src="static/Imagenes/Literatura.jpg" alt="">
+      <div class="hover-galeria">
+      <a href="{{url_for('lenguaje')}}"><img src="static/Imagenes/Literatura.jpg" alt=""></a>
+      <p>Literatura</p>
+      </div>
+      </div>
+      <div class="imagen-port">
+      <img src="static/Imagenes/Matematicas.jpg" alt="">
+      <div class="hover-galeria">
+      <a href="{{url_for('matematicas')}}"><img src="static/Imagenes/Matematicas.jpg" alt=""></a>
+      <p>Matemáticas</p>
+      </div>
+      </div>
+      <div class="imagen-port">
+      <img src="static/Imagenes/Fisica.jpg" alt="">
+      <div  class="hover-galeria">
+      <a href="{{url_for('sociales')}}"><img src="static/Imagenes/Fisica.jpg" alt=""></a>
+      <p>Ciencias Sociales</p>
+      </div>
+      </div>
+        <br>
+      <div class="imagen-port">
+      <img src="static/Imagenes/Biologia.jpg" alt="">
+      <div class="hover-galeria">
+      <a href="CienciasNaturales/indexCiencias.html"><img src="static/Imagenes/Biologia.jpg" alt=""></a>
+      <p>Ciencias Naturales</p>
+      </div>
+      </div>
+      </div>
+    </section>
+    </div>
+    </main>
+  <script src="static/script/index.js"></script>
+{% include 'footer.html' %}

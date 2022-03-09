@@ -1,26 +1,39 @@
-<!DOCTYPE html>
-<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
-    <title>Inicio</title>
 </head>
-<body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light ">
-        <a class="navbar-brand">ALUMNOS MATRICULADOS </a>
-        <button class="navbar-toggler" data-target="#my-nav" data-toggle="collapse" aria-controls="my-nav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div id="my-nav" class="collapse navbar-collapse">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="{{url_for('index')}}"> Alumnos <span class="sr-only">(current)</span></a>
-                </li>
-            </ul>
+<header>
+    <div class="header">
+      <div class="header--imagen">
+        <img src="static/Imagenes/portadaEducAula.jpg" alt="">
+      </div>
+      <div class="header--text">
+        <div class="header--text__h2">
+          <h2>Acerca de</h2>
         </div>
-    </nav>
-    <div class="container">
-
-    
+        <div class="header--text__h2">
+          <h2>Cursos</h2>
+        </div>
+        <div class="header--text__h2">
+          <h2>Empezar</h2>
+        </div>
+        <div class="header--text__h2">
+          <h2>Contactanos</h2>
+        </div>
+      </div>
+      <div class="header--sesion">
+        <div class="header--sesion__registrate">
+          <a href="{{url_for('registro')}}"> <h2 >Registrate</h2></a>
+        </div>
+        <div  class="header--sesion__iniciar">
+           <a href="{{url_for('login')}}"> <h2 >Iniciar Sesion</h2></a>
+       </div>
+      <div class="menu--toggle">
+          <svg width="30" height="30" viewBox="0 0 24 24">
+            <path fill="#B7BFC6" fill-rule="evenodd" stroke="none" stroke-width="1" id="Icon/small/hamburger" d="M5 13a1 1 0 010-2h14a1 1 0 010 2H5zm0 4a1 1 0 010-2h14a1 1 0 010 2H5zm0-8a1 1 0 110-2h14a1 1 0 010 2H5z"></path>
+          </svg>
+      </div>
+    </div>
+    </div>
+  </header>
