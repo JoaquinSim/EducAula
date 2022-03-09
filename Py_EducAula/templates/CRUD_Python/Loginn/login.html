@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Login</title>
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  </head> 
+  <body>
+<div class="h-screen bg-gradient-to-br from-blue-600 to-indigo-600 flex justify-center items-center w-full">
+  <form>
+    <div class="bg-white px-10 py-8 rounded-xl w-screen shadow-md max-w-sm">
+      <div class="space-y-4">
+        <h1 class="text-center text-2xl font-semibold text-gray-600">Login</h1>
+        <div>
+          <label for="email" class="block mb-1 text-gray-600 font-semibold">Email</label>
+          <input type="text" class="bg-indigo-50 px-4 py-2 outline-none rounded-md w-full" />
+        </div>
+        <div>
+          <label for="email" class="block mb-1 text-gray-600 font-semibold">Password</label>
+          <input type="password" class="bg-indigo-50 px-4 py-2 outline-none rounded-md w-full" />
+        </div>
+      </div>
+      <button
+              class="mt-4 w-full bg-gradient-to-tr from-blue-600 to-indigo-600 text-indigo-100 py-2 rounded-md text-lg tracking-wide">Ingresar</button>
+    </div>
+  </form>
+</div>
+  </body>
+<script src="static/script/login.js"></script>
+</html>
