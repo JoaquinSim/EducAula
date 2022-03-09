@@ -1,0 +1,50 @@
+{% include 'header.html' %}
+
+<br>
+<br>
+
+<form method="post" action="/store_Bd" enctype="multipart/form-data">
+    
+    <div class="card">
+        <div class="card-header">
+            CREAR ALUMNOS
+        </div>
+        <div class="card-body">
+            <h5 class="card-title">Datos del Alumno</h5>
+            <p class="card-text"></p>
+            
+            <div class="form-group">
+                <label for="txtNombre">Nombre:</label>
+                <input id="txtNombre" class="form-control" type="text" name="txtNombre">
+            </div>
+
+            <div class="form-group">
+                <label for="txtApellido">Apellido:</label>
+                <input id="txtApellido" class="form-control" type="text" name="txtApellido">
+            </div>
+
+            <div class="form-group">
+                <label for="txtCorreo">Correo:</label>
+                <input id="txtCorreo" class="form-control" type="text" name="txtCorreo">
+            </div>
+
+            <div class="form-group">
+                <label for="txtFoto">Foto:</label>
+                <input id="txtFoto" class="form-control" type="file" name="txtFoto">
+            </div>
+
+            <div class="form-group">
+                <input type="submit" class="btn btn-success" value="Agregar">
+                <a href="{{url_for('index_crud')}}" class="btn btn-primary">Regresar</a>
+            </div>
+            
+
+
+            
+        </div>
+    </div>
+    
+
+</form>
+
+{% include 'footer.html' %}

@@ -1,0 +1,40 @@
+{% include 'header.html' %}
+
+<br>
+<a href="{{url_for('create')}}" class="btn btn-success">Crear Alumnos</a>
+<a href="{{url_for('index')}}" class="btn btn-primary">Pagina Principal</a>
+<br>
+<br>
+
+<table class="table table-light">
+      <thead class="thead-light">
+          <tr>
+              <th>#</th>
+              <th>Foto</th>
+              <th>Nombre</th>
+              <th>Apellido</th>
+              <th>Correo</th>
+              <th>Acciones</th>
+          </tr>
+      </thead>
+      <tbody>
+           {% for alumno  in alumnos  %}
+           <tr>
+            <td>{{alumno[0] }}</td>
+            <td><img class="img-thumbnail" width="100" src="uploads/{{alumno[4]}}" alt=""></td>
+            <td>{{alumno[1] }}</td>
+            <td>{{alumno[2] }}</td>
+            <td>{{alumno[3] }}</td>
+            <td>
+                <a class="btn btn-warning" href="/edit/{{alumno[0]}}">Editar</a>
+                <a onclick= "return confirm ('Desea Borrar el Registro')" class="btn btn-danger" href="/destroy/{{alumno[0]}}">Eliminar</a>
+            
+            </td>
+        </tr>
+               
+           {% endfor %}
+
+      </tbody>
+  </table>
+
+  {% include 'footer.html' %}
